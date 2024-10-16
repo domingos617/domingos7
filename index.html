@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .book {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .book-author {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Minha Biblioteca Online</h1>
+    <form action="/cadastrar_email" method="POST">
+        <label for="email">Insira seu e-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+</header>
+
+<div class="container">
+    <div class="book">
+        <img src="https://harpercollins.com.br/cdn/shop/files/9788595086364_5d58176e-b4dd-41ef-a655-39b87a84ac5a.jpg?v=1728371685%22" alt="Livro 1">
+        <h2 class="book-title">O Senhor dos Anéis</h2>
+        <p class="book-author">J.R.R. Tolkien</p>
+    </div>
+    
+    <div class="book">
+        <img src="https://cdn.kobo.com/book-images/2de7cf3b-5a70-4e17-9a65-1af6fb5e919d/353/569/90/False/dom-quixote-8.jpg" alt="Livro 2">
+        <h2 class="book-title">Dom Quixote</h2>
+        <p class="book-author">Miguel de Cervantes</p>
+    </div>
+    
+    <div class="book">
+        <img src="https://a-static.mlcdn.com.br/450x450/livro-1984-george-orwell/magazineluiza/231307900/995af0bbe8b5843a15f74d89ff7e84e3.jpg" alt="Livro 3">
+        <h2 class="book-title">1984</h2>
+        <p class="book-author">George Orwell</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Minha Biblioteca Online. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
